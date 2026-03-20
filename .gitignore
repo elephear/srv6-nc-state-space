@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+# results/  # Keep results in repo for reproducibility
+*.egg-info/
+dist/
+build/
+.env

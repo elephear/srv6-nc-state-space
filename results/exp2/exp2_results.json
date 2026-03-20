@@ -1,0 +1,53 @@
+{
+  "experiment": "exp2_path_decision_impact",
+  "initial_conditions": {
+    "link_utilization": 0.15,
+    "gpu_load_range": [
+      0.2,
+      0.4
+    ]
+  },
+  "initial_path": {
+    "path": [
+      "U1",
+      "R31",
+      "R32",
+      "R33",
+      "C1"
+    ],
+    "cost": 0.407783452336287
+  },
+  "congestion_event": {
+    "link": "R32->R33",
+    "new_utilization": 0.9,
+    "e5_gpu_load": 0.8882820837322029
+  },
+  "updated_path": {
+    "path": [
+      "U1",
+      "R31",
+      "R21",
+      "R22",
+      "R23",
+      "R33",
+      "C1"
+    ],
+    "cost": 0.577783452336287
+  },
+  "auto_selection": {
+    "target": "E6",
+    "path": [
+      "U1",
+      "R31",
+      "R21",
+      "R22",
+      "E6"
+    ],
+    "cost": 0.3919770165544768
+  },
+  "verification": {
+    "path_changed": true,
+    "avoids_congested_link": true,
+    "prefers_lower_load_node": false
+  }
+}
